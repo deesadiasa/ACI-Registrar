@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACI Registrar Document Request Monitoring</title>
-    <!-- Include Firebase SDK script tags -->
-    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js"></script>
-    <!-- Include your repository.js file -->
-    <script src="repository.js"></script>
     <style>
         /* CSS styles */
         body {
@@ -30,7 +25,7 @@
         }
 
         .logo img {
-            width: 100px;
+            width: 100px; /* Adjust the width as needed */
             height: auto;
         }
 
@@ -96,9 +91,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="School Logo">
-        </div>
+       
         <div class="title">
             AGUSAN COLLEGES, INCORPORATED
         </div>
@@ -122,9 +115,6 @@
 
             <label for="middleName">Middle Name:</label>
             <input type="text" id="middleName" name="middleName"><br>
-
-            <label for="contactNumber">Contact Number:</label>
-            <input type="tel" id="contactNumber" name="contactNumber" required><br>
 
             <label for="documentRequest">Document Request:</label>
             <select id="documentRequest" name="documentRequest" required>
@@ -161,7 +151,6 @@
                     <th>Surname</th>
                     <th>First Name</th>
                     <th>Middle Name</th>
-                    <th>Contact Number</th>
                     <th>Document Request</th>
                     <th>Purpose</th>
                     <th>Control Number</th>
@@ -176,6 +165,10 @@
             </tbody>
         </table>
     </main>
-    <script src="repository.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./app.js"></script>
+    
+
 </body>
 </html>
